@@ -1,0 +1,165 @@
+body {
+  background-color: #fdf916;
+  border: 5px solid white;
+  border-bottom: none;
+  padding: 2em 2em 0 2em;
+  height: 50em;
+  margin: 2.5em;
+}
+
+content {
+  height: 800px;
+}
+
+.bubble {
+  position: relative;
+  display: inline-block;
+  max-width: 600px;
+  min-height: 1.5em;
+  padding: 20px;
+  background: #3262aa;
+  border: 4px solid white;
+  border-radius: 20px;
+  float: left;
+  color: white;
+  font-size: 2em;
+  margin-right: 500px;
+  z-index: 0.25;
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 60%;
+  border-style: solid;
+  border-width: 15px 15px 0;
+  border-color: #3fc1c1 transparent;
+  display: block;
+  width: 0;
+  z-index: 0.25;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  bottom: -19.5px;
+  left: calc(60% - 3px);
+  border-style: solid;
+  border-width: 18px 18px 0;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+
+.podium-top {
+  position: relative;
+  /* or absolute */
+  top: 500px;
+  left: 49%;
+  width: 170px;
+  height: 10px;
+  background: #0026ff;
+  box-shadow: 6px 7px 15px -2px black;
+  z-index: 1;
+}
+
+.podiam {
+  width: 150px;
+  height: 175px;
+  background: #0026ff;
+  top: 400px;
+}
+
+.centered {
+  position: relative;
+  /* or absolute */
+  top: 500px;
+  left: 50%;
+}
+
+.podiam-right {
+  width: 60px;
+  height: 175px;
+  background: #0026ff;
+  position: relative;
+  /* or absolute */
+  top: 360px;
+  left: 61.7%;
+  transform: skew(0deg, 50deg);
+}
+
+.podiam-right-bottom {
+  width: 70px;
+  height: 13px;
+  background: #0026ff;
+  position: relative;
+  /* or absolute */
+  top: 184px;
+  left: 61.6%;
+  transform: skew(0deg, 50deg);
+}
+
+.podium-right-top {
+  width: 60px;
+  height: 12px;
+  background: #0026ff;
+  position: relative;
+  /* or absolute */
+  top: 162px;
+  left: 62.1%;
+  transform: skew(0deg, 50deg);
+}
+
+.mic-stick {
+  position: relative;
+  width: 15px;
+  padding: 20px;
+  border: #2b6b7d solid 6px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top-left-radius: 20px;
+  top: 55px;
+  left: 51.8%;
+  z-index: 1px;
+}
+
+.mic-head {
+  position: relative;
+  width: 10px;
+  height: 0.5px;
+  padding: 10px;
+  background: #14525d;
+  border: 4px solid #14525d;
+  border-radius: 20px;
+  margin-right: 200px;
+  top: -5px;
+  left: 55%;
+  z-index: 500;
+}
+
+.mic-bottom {
+  position: relative;
+  width: 2px;
+  height: 0.5px;
+  padding: 8px;
+  background: #14525d;
+  border: 4px solid #14525d;
+  border-bottom: 0;
+  border-radius: 20px;
+  margin-right: 200px;
+  top: 25px;
+  left: 51%;
+}
+
+img {
+  position: relative;
+  top: -350px;
+  left: 46%;
+  z-index: -1;
+}
+
+img {
+  z-index: 0.6;
+}
